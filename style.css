@@ -26,17 +26,18 @@ header {
   margin-bottom: 0rem;
 }
 
-.conteudo{
+.conteudo {
   display: flex;
+  margin-inline: 5rem;
 }
 
-.conteudo .info{
+.conteudo .info {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.conteudo .info h1{
+.conteudo .info h1 {
   margin: 5rem 3rem;
   margin-bottom: 0rem;
   font-family: "Poppins";
@@ -46,7 +47,7 @@ header {
   font-weight: 700;
 }
 
-.conteudo .info p{
+.conteudo .info p {
   margin-left: 3rem;
   margin-top: 0rem;
   font-family: "Poppins";
@@ -55,12 +56,12 @@ header {
   color: #ffffffb4;
 }
 
-.conteudo .info a{
+.conteudo .info a {
   margin-left: 3rem;
   background-color: #fff;
   width: 20rem;
   display: grid;
-  place-items:center;
+  place-items: center;
   padding-block: 1.5rem;
   font-size: 2rem;
   text-decoration: none;
@@ -68,31 +69,30 @@ header {
   border-radius: 5rem;
 }
 
-.conteudo .info a:hover{
+.conteudo .info a:hover {
   cursor: pointer;
   background-color: var(--softMagenta);
-  color:#fff;
+  color: #fff;
   transition: all 0.5s;
 }
 
- .final{
+.final {
   place-self: end end;
 }
 
- .final .redes{
+.final .redes {
   display: flex;
   list-style: none;
   gap: 2rem;
   margin-right: 5rem;
 }
 
-
-.final .redes li{
+.final .redes li {
   width: 3rem;
   fill: #fff;
 }
 
-.final .redes .facebook{
+.final .redes .facebook {
   width: 1.8rem;
 }
 
@@ -105,4 +105,97 @@ header {
 .attribution a {
   color: var(--softMagenta);
   text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .container .logo img {
+   width: 20rem;
+  }
+
+  .container .conteudo .imagemFundo img{
+    width: 50rem;
+  }
+
+  .container .conteudo .info h1{
+    font-size: 3rem;
+  }
+
+  .container .conteudo .info p{
+    font-size: 1.4rem;
+  }
+
+  .container .conteudo .info a{
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+
+   .container .conteudo .imagemFundo img{
+     width: 40rem;
+   }
+ 
+   .container .conteudo .info h1{
+     font-size: 3rem;
+     text-align: center;
+   }
+ 
+   .container .conteudo .info p{
+     font-size: 1.4rem;
+   }
+ 
+   .container .conteudo .info a{
+     font-size: 1.5rem;
+     place-self: center;
+   }
+}
+
+@media screen and (max-width: 500px) {
+
+  .container .logo img {
+    width: 15rem;
+   }
+
+  .conteudo {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+
+   .container .conteudo .imagemFundo img{
+     width: 28rem;
+     margin-top: 5rem;
+   }
+ 
+   .container .conteudo .info h1{
+     font-size: 2.3rem;
+     text-align: center;
+     margin-inline: 0rem;
+   }
+ 
+   .container .conteudo .info p{
+     font-size: 1.8rem;
+     text-align: center;
+     margin-inline: 0rem
+   }
+ 
+   .container .conteudo .info a{
+     font-size: 1.5rem;
+     place-self: center;
+     margin-inline: 0rem
+   }
+
+   .final {
+    place-self: center;
+    margin-top: 3rem;
+  }
+
+  
 }
